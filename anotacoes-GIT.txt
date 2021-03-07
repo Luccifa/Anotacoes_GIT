@@ -1,0 +1,57 @@
+=> Visualizar se esta cadastrado no GitHub
+git config --list
+git config --global user.name "luccifa"
+git config --global user.email "fabiolucci@terra.com.br"
+
+=> Entrar na pasta do projeto e clicar com botão direto (Git bash here)
+
+=> Inicializar repositorio local  
+git ini
+
+=> Associar seu repositorio local ao repositorio remoto
+git remote add origin <hhpt-projeto>.git
+
+=> Descarregar projeto remoto para dentro da pasta local
+git pull origin master
+
+=> verificar arquivos pendentes de alteracao no git
+git status
+
+=> Adicionar arquivos a serem atualizados 
+git add .
+
+=> Efetivar alterações
+git commit -m "mensagem"
+
+=> git push -u origin master 
+Enviar alterações para o github
+obs: nas proximas é só git push
+
+=> visualizar as versoes 
+git log --oneline
+
+
+=> desfazer desde ultimo commit
+git clean -df
+git checkout -- .
+
+=> remover ultimo commit, mantendo arquivo do jeito que estão
+git reset --soft HEAD~1
+
+=> remover ultimo commit, inclusive as alterações dos arquivos
+git reset --hard HEAD~1
+
+=> voltar a um commit especifico
+git checkout <codigo commit>
+
+=> voltar ao ultimo commit
+git checkout master
+
+=> apagar ultimo commit no github
+git push -f origin HEAD^:master
+
+=> mudar repositorio remoto
+git remote set-url origin <hhtp-novo>
+
+
+
